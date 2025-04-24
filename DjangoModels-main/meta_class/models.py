@@ -211,7 +211,7 @@ class Pagamento(models.Model):
     metodo = models.CharField(max_length=50, verbose_name=_('Método de Pagamento'))
     transacao_id = models.CharField(max_length=100, blank=True, null=True, verbose_name=_('ID da Transação'))
 
-    class Meta:
+    class Meta: 
         verbose_name = _('Pagamento')
         verbose_name_plural = _('Pagamentos')
         ordering = ['-data_pagamento']
